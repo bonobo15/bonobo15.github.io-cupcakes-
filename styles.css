@@ -1,0 +1,40 @@
+body {
+    background: rgb(211, 114, 145);
+    color: rgb(250, 225, 208);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+header {
+    background: rgb(234, 131, 163);
+    padding: 20px;
+}
+section {
+    background: rgb(232, 157, 180);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+footer {
+    background: rgb(191, 93, 124);
+    padding: 10px 20px;
+}
+div {
+    background: rgb(196, 121, 145);
+    width: 200px;
+    margin: auto;
+    padding: 50px;
+
+}
+ul{ 
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin: 20;
+    
+}
