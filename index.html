@@ -1,33 +1,97 @@
 <!DOCTYPE html>
-
+<html>
+<link rel="stylesheet" href="styles.css">
 <head>
-    <title>Krézi cucc</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <title>Home</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="pages/cakes.html">Cakes</a> </li>
-                <li> <a href="pages/pictures.html">Pictures</a> </li>
-            </ul>
-        </nav>
+        <h1>Cool website about baking</h1>
+        <div>
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="recepies.html">Recepies</a></li>
+                    <li> <a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div> 
+        <div> <img src="https://www.flaticon.com/icon/1705312498778" alt="">
+        </div>
+    </header>
+    <footer>
+        <h1>Home</h1>
+    </footer>
 
-    </header> <h1>Home</h1>
-    <section>
-        <div>a</div>
-        <div>b</div>
-        <div>c</div>
-    </section>
-    <section>lower section</section>
-    <footer>footer</footer>
-    <button class="btn" id="orderbutton" onclick=nextPage()>I'll order!</button>
+    <div class="box">
+        <button type="button" class="lenyiloscucc">About me</button>
+        <div class="mezeskalacs">
+            <p>Ez itt felületes infó rólam nagyon szeretek sütni blablabla</p>
+            <p>Sok</p>
+            <p>nyelvtanilag</p>
+            <p>helyes</p>
+            <p>szó</p>
+            <p>meg</p>
+            <p>mondat</p>
+            <p>magyarul</p>
+            <p>egy</p>
+            <p>angol</p>
+            <p>weboldalon</p>
+
+        </div>
+    </div>
+
+    <div class="box">
+        <button type="button" class="lenyiloscucc">Most famous recepies</button>
+        <div class="mezeskalacs">
+            <p>Itt lesznek belinkelve receptek</p>
+            <p>recept</p>
+            <p>hrecept</p>
+            <p>recept</p>
+            <p>recept</p>
+            <p>recept</p>
+            <p>recept</p>
+            <p>recept</p>
+            <p>arecept</p>
+            <p>recept</p>
+
+
+        </div>
+    </div>
+
+    <div class="box">
+        <button type="button" class="lenyiloscucc">Ordering</button>
+        <div class="mezeskalacs">
+            <p>Itt ilyen elérhetőség még valszeg változik mert, hogy is tudnának rendenli?</p>
+            <p>Sok</p>
+            <p>nyelvtanilag</p>
+            <p>helyes</p>
+            <p>szó</p>
+            <p>meg</p>
+            <p>mondat</p>
+            <p>magyarul</p>
+            <p>egy</p>
+            <p>angol</p>
+            <p>weboldalon</p>
+
+        </div>
+    </div>
+
     <script>
-        function nextPage() {
-            window.location.href = "pages/orders.html";
+        var coll = document.getElementsByClassName("lenyiloscucc");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
         }
-
     </script>
 </body>
 </html>
